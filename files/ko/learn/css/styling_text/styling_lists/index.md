@@ -10,17 +10,17 @@ slug: Learn/CSS/Styling_text/Styling_lists
 <table class="learn-box standard-table">
   <tbody>
     <tr>
-      <th scope="row">전제조건:</th>
+      <th scope="row">선행 조건:</th>
       <td>
-        Basic computer literacy, HTML basics (study
+        기본적인 컴퓨터의 이해, HTML 기본 (
         <a href="/ko/docs/Learn/HTML/Introduction_to_HTML"
-          >Introduction to HTML</a
-        >), CSS basics (study
+          >HTML 소개</a
+        > 둘러보기), CSS 기본 (
         <a href="/ko/docs/Learn/CSS/Introduction_to_CSS"
-          >Introduction to CSS</a
-        >),
+          >CSS 소개</a
+        > 둘러보기),
         <a href="/ko/docs/Learn/CSS/Styling_text/Fundamentals"
-          >CSS text and font fundamentals</a
+          >CSS 글꼴 과 폰트 기본</a
         >.
       </td>
     </tr>
