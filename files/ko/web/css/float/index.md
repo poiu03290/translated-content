@@ -9,11 +9,11 @@ CSS 속성(property) **`float`** 은 한 요소(element)가 보통 흐름(normal
 
 {{EmbedInteractiveExample("pages/css/float.html")}}
 
-부동**(floating) 요소** 는 `float` 의 계산값(computed value)이 `none`이 아닌 요소입니다.
+floating 요소는 `float` 의 계산값(computed value)이 `none`이 아닌 요소입니다.
 
 {{cssinfo}}
 
-`float` 은 블록 레이아웃의 사용을 뜻하기 때문에, 일부 경우에 {{cssxref("display")}} 값의 계산값을 수정합니다:
+`float`은 블록 레이아웃의 사용을 뜻하기 때문에, 일부 경우에 {{cssxref("display")}} 값의 계산값을 수정합니다.
 
 | 지정값(Specified value) | 계산값                                                   |
 | ----------------------- | -------------------------------------------------------- |
@@ -105,9 +105,9 @@ h4 {
 
 ### float 지우기
 
-위 예제에서, 부동된 요소는 안에 텍스트가 부동된 블록보다 세로가 더 짧습니다. 그러나, 텍스트가 모든 부동 요소 하단 아래로 넘어갈 만큼 길지 않다면, 예상치 못한 결과를 볼 수 있습니다. 예를 들어, 위 단락(paragraph)이 오직 "Lorem ipsum dolor sit amet,"만 읽고 "Floats Example" 머릿글(heading)처럼 같은 스타일의 다른 머릿글이 이어졌다면, 두 번째 머릿글은 빨간 박스 사이에 보입니다. 아마도, 우리는 다음 머릿글이 완전히 왼쪽으로 정렬되기를 원합니다. 이를 달성하기 위해, 우리는 float을 지워야(clear) 합니다.
+위 예제에서, 부동된 요소는 안에 텍스트가 부동된 블록보다 세로가 더 짧습니다. 그러나 텍스트가 모든 부동 요소 하단 아래로 넘어갈 만큼 길지 않다면, 예상치 못한 결과를 볼 수 있습니다. 예를 들어, 위 단락(paragraph)이 오직 "Lorem ipsum dolor sit amet,"만 읽고 "Floats Example" 머릿글(heading)처럼 같은 스타일의 다른 머릿글이 이어졌다면, 두 번째 머릿글은 빨간 박스 사이에 보입니다. 아마도, 우리는 다음 머릿글이 완전히 왼쪽으로 정렬되기를 원합니다. 이를 달성하기 위해, 우리는 float을 지워야(clear) 합니다.
 
-이 예제에서 float을 지우는 가장 간단한 방법은 우리가 왼쪽으로 정렬되는 지 확인하고 싶은 새 머릿글에 {{Cssxref("clear")}} 속성을 추가하는 것입니다:
+이 예제에서 float을 지우는 가장 간단한 방법은 우리가 왼쪽으로 정렬되는지 확인하고 싶은 새 머릿글에 {{Cssxref("clear")}} 속성을 추가하는 것입니다.
 
 ```css
 h2.secondHeading {
@@ -115,7 +115,7 @@ h2.secondHeading {
 }
 ```
 
-그러나, 이 방법은 우리가 머릿글이 가로로 옆에 계속 보이기를 원하는 같은 블록 형식 문맥([block formatting context](/ko/docs/Web/Guide/CSS/Block_formatting_context)) 내에 다른 요소가 없을 때만 동작합니다. 우리 `h2` 좌우로 부동되는 사이드바(sidebar)인 형제(sibling)가 있다면, `clear` 사용은 강제로 머릿글이 두 사이드바 아래로 나타나게 하고 이는 아마 우리가 원하는 게 아닙니다.
+그러나 이 방법은 우리가 머릿글이 가로로 옆에 계속 보이기를 원하는 같은 블록 형식 문맥([block formatting context](/ko/docs/Web/Guide/CSS/Block_formatting_context)) 내에 다른 요소가 없을 때만 동작합니다. 우리 `h2` 좌우로 부동되는 사이드바(sidebar)인 형제(sibling)가 있다면, `clear` 사용은 강제로 머릿글이 두 사이드바 아래로 나타나게 하고 이는 아마 우리가 원하는 게 아닙니다.
 
 그들 아래 요소의 float을 지우는 게 선택사항이 아니라면, 다른 방법(approach)은 부동 요소가 담긴 컨테이너의 블록 형식 문맥을 제한하는 겁니다. 다시 위 예제를 참조하면, 빨간 박스 셋은 모두 `p` 요소 내에 있는 걸로 보입니다. 우리는 박스를 포함하도록 늘어나지만, 그 하단 밖(밑)으로 사라지지 않게 `hidden` 혹은 `auto` 로 p의 {{Cssxref("overflow")}} 속성을 설정할 수 있습니다:
 
